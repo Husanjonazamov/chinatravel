@@ -9,7 +9,7 @@
     <meta property="og:title" content="@yield('title') - {{__('CHINA-TRAVEL MChJ')}}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ Request::url() }}" />
-    <meta property="og:image" content="/assets/images/travel_logo.png" />
+    <meta property="og:image" content="/assets/images/samiritravel/logo.png" />
     <meta property="og:description" content="CHINA-TRAVEL MChJ – sayohat dunyosiga sarguzashtingizni boshlash uchun ideal tanlov! Biz sizni eng go'zal va nafis joylarga olib boramiz. CHINA TREVEL dunyoning turli burchaklariga, madaniyatlar bilan tanishish va yangi tajribalar orttirish imkoniyatini taqdim etadi. Bizning professional va mehribon jamoamiz har bir sayohatchiga shaxsiy yondashuvni ta'minlaydi va ularga unutilmas taassurotlar qoldirishni kafolatlaydi. Bizning sayohatlarimiz turli xil bo'lib, ular orasida ekskursiyalar, dam olish sayohatlari, ekoturizm, shahar turlari va boshqalar mavjud. Sayohatingizni CHINA TREVEL bilan rejalashtiring va dunyoni yangicha ko'z bilan kashf eting!" />
     <meta property="og:site_name" content="AGN " />
 
