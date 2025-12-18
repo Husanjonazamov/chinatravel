@@ -83,8 +83,8 @@
                         </div>
                         <div class="footer-social-links">
                             <ul>
-                                <li class="social-icon"><a href="https://t.me/Samira_travel"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-                                <li class="social-icon"><a href="https://www.instagram.com/samiratravel2025/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="social-icon"><a href="https://t.me/chinatravel_support"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                                <li class="social-icon"><a href="https://www.instagram.com/chinatravel_uz?igsh=bWV2N3lqZGtoZTRn"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                 <!-- <li class="social-icon"><a href="{{$youtube}}"><i class="fa fa-youtube" aria-hidden="true"></i></a></li> -->
                             </ul>
                         </div>
