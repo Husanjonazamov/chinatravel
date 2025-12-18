@@ -94,34 +94,59 @@
             </div>
         </div>
     </section>
-    <div class="map">
-     <!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<style>
+    .map-container {
+        max-width: 80%;
+        height: 350px;
+        margin: 20px auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    #coords {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
 
-<!-- Xarita konteyneri -->
-<div class="map-container" style="max-width: 80%; height: 350px; margin: 20px auto; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    <div id="map" style="width: 100%; height: 100%;"></div>
-</div>
-
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<div class="map-container" id="map"></div>
 
 <script>
-  // Xarita markazi: Toshkent
-  var map = L.map('map').setView([41.278171, 69.261913], 16);
+    ymaps.ready(init);
 
-  // OpenStreetMap layer
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
+    function init() {
+        // Xarita markazi: to'g'ri manzil
+        var myMap = new ymaps.Map("map", {
+            center: [41.278171, 69.261913],
+            zoom: 16,
+            controls: ['zoomControl', 'fullscreenControl']
+        });
 
-  // Marker va popup
-  L.marker([41.278171, 69.261913]).addTo(map)
-      .bindPopup('<strong>CHINA-TRAVEL</strong><br>Sayohat markazi')
-      .openPopup();
+        // Marker (Placemark)
+        var myPlacemark = new ymaps.Placemark(
+            [41.278171, 69.261913],
+            {
+                balloonContent: '<strong>CHINA-TRAVEL</strong><br>Sayohat markazi',
+                hintContent: 'CHINA-TRAVEL'
+            },
+            {
+                preset: 'islands#redIcon',
+                draggable: true // markerni sudrab ko'chirish mumkin
+            }
+        );
+
+        myMap.geoObjects.add(myPlacemark);
+
+        // Marker sudralganda koordinatalarni yangilash
+        myPlacemark.events.add('dragend', function () {
+            var coords = myPlacemark.geometry.getCoordinates();
+            document.getElementById('coords').innerText = 'Lat: ' + coords[0].toFixed(6) + ', Lon: ' + coords[1].toFixed(6);
+        });
+    }
 </script>
 
-    </div>
 
 @endsection
