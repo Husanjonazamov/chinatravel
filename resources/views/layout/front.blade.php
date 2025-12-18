@@ -6,11 +6,11 @@
     <title>@yield('title') - {{__('China-travel')}}</title>
 
     <!-- Open Graph tags -->
-    <meta property="og:title" content="@yield('title') - {{__('CHINA-TRAVEL MChJ')}}" />
+    <meta property="og:title" content="@yield('title') - {{__('"DM GROUPLIMITED"  MCHJ')}}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ Request::url() }}" />
     <meta property="og:image" content="/assets/images/samiritravel/logo.png" />
-    <meta property="og:description" content="CHINA-TRAVEL MChJ – sayohat dunyosiga sarguzashtingizni boshlash uchun ideal tanlov! Biz sizni eng go'zal va nafis joylarga olib boramiz. CHINA TREVEL dunyoning turli burchaklariga, madaniyatlar bilan tanishish va yangi tajribalar orttirish imkoniyatini taqdim etadi. Bizning professional va mehribon jamoamiz har bir sayohatchiga shaxsiy yondashuvni ta'minlaydi va ularga unutilmas taassurotlar qoldirishni kafolatlaydi. Bizning sayohatlarimiz turli xil bo'lib, ular orasida ekskursiyalar, dam olish sayohatlari, ekoturizm, shahar turlari va boshqalar mavjud. Sayohatingizni CHINA TREVEL bilan rejalashtiring va dunyoni yangicha ko'z bilan kashf eting!" />
+    <meta property="og:description" content=""DM GROUPLIMITED"  MCHJ – sayohat dunyosiga sarguzashtingizni boshlash uchun ideal tanlov! Biz sizni eng go'zal va nafis joylarga olib boramiz. CHINA TREVEL dunyoning turli burchaklariga, madaniyatlar bilan tanishish va yangi tajribalar orttirish imkoniyatini taqdim etadi. Bizning professional va mehribon jamoamiz har bir sayohatchiga shaxsiy yondashuvni ta'minlaydi va ularga unutilmas taassurotlar qoldirishni kafolatlaydi. Bizning sayohatlarimiz turli xil bo'lib, ular orasida ekskursiyalar, dam olish sayohatlari, ekoturizm, shahar turlari va boshqalar mavjud. Sayohatingizni CHINA TREVEL bilan rejalashtiring va dunyoni yangicha ko'z bilan kashf eting!" />
     <meta property="og:site_name" content="AGN " />
 
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/samiritravel/logo.png">
@@ -19,6 +19,8 @@
     <link href="/assets/font/flaticon.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/plugin.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
 </head>
 <body>
 <!-- 
@@ -31,7 +33,7 @@
         <div class="container">
             <div class="contact-info">
                 <p><i class="flaticon-phone-call"></i>@lang('Phone') +998-97-777-98-11</p>
-                <p><i class="flaticon-mail"></i> @lang('Mail') <a href="mailto:chinatravel@mail.ru" style="color: white;"></a>chinatravel@mail.ru</p>
+                <p><i class="flaticon-mail"></i> @lang('Mail') <a href="mailto:ldgexpressuz@gmail.com" style="color: white;"></a>ldgexpressuz@gmail.com</p>
             </div>
             <div class="login-btn pull-right">
                 <div class="row">
@@ -168,14 +170,14 @@
                     <div class="col-lg-3">
                         <div class="footer-about footer-margin">
                             <div class="about-logo">
-                                <h5>CHINA-TRAVEL MChJ</h5>
+                                <h5>"DM GROUPLIMITED"  MCHJ</h5>
                             </div>
 <p>@lang('We will organize tours for you throughout Uzbekistan') </p>
                             <div class="about-location">
                                 <ul>
 <li><i class="flaticon-maps-and-flags" aria-hidden="true"></i> @lang('Location')</li>
                                     <li><i class="flaticon-phone-call"></i> +998-97-777-98-11</li>
-                                    <li><i class="flaticon-mail"></i> <a href="mailto:chinatravel@mail.ru">chinatravel@mail.ru</a></li>
+                                    <li><i class="flaticon-mail"></i> <a href="mailto:ldgexpressuz@gmail.com">ldgexpressuz@gmail.com</a></li>
                                 </ul>
                             </div>
                             <div class="footer-social-links">
@@ -218,7 +220,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="copyright-content">
-                        <p>2024 <i class="fa fa-copyright" style="color: #bfc012" aria-hidden="true"></i>  <a href="http://www.felix-its.uz/"  style="color: #bfc012" target="_blank">Felix-IT solution tomonidan ishlab chiqilgan</a></p>
+                        <p>2025 <i class="fa fa-copyright" style="color: #bfc012" aria-hidden="true"></i>  <a href="http://www.felix-its.uz/"  style="color: #bfc012" target="_blank">Felix-IT solution tomonidan ishlab chiqilgan</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6">

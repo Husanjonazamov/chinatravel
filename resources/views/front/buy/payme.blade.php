@@ -112,7 +112,7 @@
                                 <h3>Savollaringizni bormi?</h3>
                                 <p>Savollaringizni va boshqa murojaatlarni quyidagi raqam yoki elektron pocta orqali qoldirishingiz mumkin.</p>
                                 <p><i class="flaticon-phone-call"></i>+998-97-777-98-11</p>
-                                <p><i class="flaticon-mail"></i> <a href="mailto:chinatravel@mail.ru">chinatravel@mail.ru</a></p>
+                                <p><i class="flaticon-mail"></i> <a href="mailto:ldgexpressuz@gmail.com">ldgexpressuz@gmail.com</a></p>
                             </div>
                         </div>
                     </aside>
